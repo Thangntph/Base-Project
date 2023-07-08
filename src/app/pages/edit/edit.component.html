@@ -1,0 +1,33 @@
+<h2>Sửa sản phẩm</h2>
+<form [formGroup]="form" (ngSubmit)="onAdd()">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Name</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" formControlName="name" name="name" [(ngModel)]="products.name">
+      <div class="text-danger" *ngIf="form.get('name')?.invalid && form.get('name')?.touched">
+        Tên bắt buộc phải nhập & Tên phải lớn hơn 3 kí tự
+      </div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail" class="form-label">Image</label>
+        <input type="text" class="form-control" id="exampleInputEmail" formControlName="image" name="image" [(ngModel)]="products.image">
+        <div class="text-danger" *ngIf="form.get('image')?.invalid && form.get('image')?.touched">
+            Ảnh bắt buộc phải nhập 
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmai" class="form-label">Quality</label>
+        <input type="number" class="form-control" id="exampleInputEmai" formControlName="quality" name="quality" [(ngModel)]="products.quality">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEma" class="form-label">Price</label>
+        <input type="number" class="form-control" id="exampleInputEma" formControlName="price" name="price" [(ngModel)]="products.price">
+        <div class="text-danger" *ngIf="form.get('price')?.invalid && form.get('price')?.touched">
+            Giá bắt buộc phải nhập & Giá không được âm
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="xampleInputEmail1" class="form-label">Description</label>
+        <textarea name="description"  class="form-control" formControlName="description" id="xampleInputEmail1" [(ngModel)]="products.description" cols="" rows="10"></textarea>
+      </div>  
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>

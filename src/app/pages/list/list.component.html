@@ -1,0 +1,30 @@
+<h2>Quản lý sản phẩm</h2>
+<a class="btn btn-primary" routerLink="add">Thêm sản phẩm</a>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Image</th>
+        <th scope="col">Quality</th>
+        <th scope="col">Price</th>
+        <th scope="col">Description</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products; index as i">
+        <th scope="row">{{i + 1}}</th>
+        <td>{{product.name}}</td>
+        <td><img style="width: 100px; height: 135px;" src="{{product.image}}" alt=""></td>
+        <td>{{product.quality}}</td>
+        <td>{{product.price}}</td>
+        <td>{{product.description}}</td>
+        <td>
+            <button class="btn btn-danger me-2" (click)="removeItem(product.id)">Xóa</button>
+            <a class="btn btn-primary" routerLink="edit/{{product.id}}">Sửa</a>
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>

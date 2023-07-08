@@ -1,0 +1,18 @@
+<h2>Đăng nhập</h2>
+<form [formGroup]="form" (ngSubmit)="onAdd()">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" formControlName="email" >
+      <div class="text-danger" *ngIf="form.get('email')?.invalid && form.get('email')?.touched">
+        Email bắt buộc phải nhập & Email phải đúng định dạng
+      </div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputEmail" formControlName="password">
+        <div class="text-danger" *ngIf="form.get('password')?.invalid && form.get('password')?.touched">
+            Pass bắt buộc nhập & Pass ít nhất 6 kí tự
+        </div>
+      </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>

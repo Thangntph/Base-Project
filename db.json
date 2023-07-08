@@ -1,30 +1,53 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Product Ad asda",
-      "price": 200
-    },
-    {
-      "name": "Sản phẩm B",
-      "price": 200,
-      "id": 2
-    },
-    {
-      "name": "Sản phẩm C",
+      "name": "thắng dz",
+      "image": "https://genzrelax.com/wp-content/uploads/2022/03/anh-gai-xinh-deo-mat-kinh-1.jpg",
       "price": 300,
-      "id": 3
+      "id": 7
     },
     {
-      "name": "Sản phẩm D",
-      "price": 123,
-      "id": 4
+      "name": "apple kkkkkkkk",
+      "image": "https://ninistore.vn/wp-content/uploads/2019/03/Cho-thue-do-hanbok-nu-o-TPHCM-ao-hong-phoi-vay-do-HB03.jpg",
+      "quality": 3,
+      "price": 300,
+      "id": 8
     },
     {
-      "name": "Sản phẩm E",
-      "price": 123,
-      "id": 5
+      "name": "abcc",
+      "image": "https://scontent.fhan5-11.fna.fbcdn.net/v/t39.30808-6/332030056_513755977612955_3764465044145688796_n.jpg?stp=dst-jpg_p417x417&_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=E1I4FhMVEd0AX83NJSD&_nc_ht=scontent.fhan5-11.fna&oh=00_AfCqh1ApiHH5JH1Csmrt3zzcTcxkrjYILVMLhATQ_z6NCw&oe=649A022B",
+      "quality": 3,
+      "price": 300,
+      "description": "ahihi",
+      "id": 9
+    },
+    {
+      "name": "Product 2",
+      "image": "https://prnt.sc/cUq9bLQbctHq",
+      "quality": 1,
+      "price": 95,
+      "description": "chim cánh cụt",
+      "id": 10
+    },
+    {
+      "name": "ahjihiih",
+      "image": "https://genzrelax.com/wp-content/uploads/2022/03/anh-gai-xinh-deo-mat-kinh-1.jpg",
+      "quality": 3,
+      "price": 300,
+      "description": "aaa",
+      "id": 11
     }
   ],
-  "users": []
+  "users": [
+    {
+      "email": "ass@u",
+      "password": "$2a$10$Zx1qK0/WniW9VBYRKsQe4eJ00aZ1d871ViUIr8fCH2SMMQzAcYq7W",
+      "id": 1
+    },
+    {
+      "email": "admin@g",
+      "password": "$2a$10$NpvZQGKUq3Z6t9bzjD2eZehT4sF8dL89A06hTKRdYPfc64zzpTqDK",
+      "id": 2
+    }
+  ]
 }
